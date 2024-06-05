@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className={`navbar-container ${isOpen ? "open" : "closed"}`}>
       <div className="navbar">
         <div className="navbar-header">
-          <img src="public\Navbar Assets\school logo.png" alt="School Logo" />
+          <img src="\Navbar Assets\school logo.png" alt="School Logo" />
           <h2 className="school-name">Chaudhary Chhotu Ram Public School</h2>
         </div>
         <div className="navbar-content">
