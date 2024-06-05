@@ -51,7 +51,7 @@ const AddContentModal = ({ isOpen, onRequestClose, onSubmit }) => {
       <div className="modalOptions">
         <button onClick={() => setSelectedOption("type")}>
           <div>
-            <img src="public/Homepage Assets/addcontent Text.png" alt="" />
+            <img src="/Homepage Assets/addcontent Text.png" alt="" />
             <p>Type your own personalized content</p>
           </div>
         </button>
@@ -62,7 +62,7 @@ const AddContentModal = ({ isOpen, onRequestClose, onSubmit }) => {
           }}
         >
           <div>
-            <img src="public/Homepage Assets/addcontent pdf.png" alt="" />
+            <img src="/Homepage Assets/addcontent pdf.png" alt="" />
             <p>Upload a PDF of your content</p>
           </div>
         </button>

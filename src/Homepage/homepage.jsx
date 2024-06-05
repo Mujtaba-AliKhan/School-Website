@@ -55,8 +55,8 @@ const Homepage = () => {
       <div>
         <h1> &lt; Chapter Name</h1>
         <div className="imgContainer">
-          <img src="public/Homepage Assets/Simulations.png" alt="" />
-          <img src="public/Homepage Assets/Your Videos.png" alt="" />
+          <img src="/Homepage Assets/Simulations.png" alt="" />
+          <img src="/Homepage Assets/Your Videos.png" alt="" />
         </div>
         <div className="submittedContentsPdf">
           {submittedContentsPdf.map((content, index) => (
