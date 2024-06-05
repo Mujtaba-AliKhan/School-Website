@@ -1,0 +1,151 @@
+.homepageContainer {
+  padding: 10px;
+  display: block;
+}
+.homepageContainer h1 {
+  padding: 0 40px;
+  cursor: pointer;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444444;
+}
+.homepageContainer h1:hover {
+  text-decoration: underline;
+}
+
+.homepageContainer h1:active {
+  color: dodgerblue;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.imgContainer img {
+  width: 600px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #babecc;
+}
+.addContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.addContentContainer img {
+  border-radius: 50%;
+  padding: 20px;
+  height: 50px;
+  background-color: aliceblue;
+}
+.addContentContainer button {
+  background-color: dodgerblue;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.addContentContainer button:active {
+  border: 1px solid dodgerblue;
+  box-shadow: inset 1px 1px 5px #1870c8;
+}
+
+.submittedContents {
+  margin: 20px;
+}
+
+.submittedContent {
+  box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.textContainer {
+  white-space: pre-wrap;
+}
+.submittedContentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
+
+.pdfContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  text-align: center;
+  max-width: min-content;
+  font-size: 14px;
+}
+.pdfContainer img {
+  height: 100px;
+}
+.addContentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.pdfPreview {
+  pointer-events: none;
+  width: 150px;
+  height: 180px;
+}
+.submittedContentsPdf {
+  display: flex;
+}
+.pdfContentHeader {
+  display: flex;
+  align-items: center;
+}
+.submittedContentPdf {
+  overflow: hidden;
+}
+.addContentSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.addContentSubContainer-hide {
+  display: none;
+}
+@media (max-width: 768px) {
+  .homepageContainer {
+    margin: 80px 0;
+  }
+
+  .homepageContainer h1 {
+    font-size: 18px;
+  }
+  .imgContainer img {
+    width: 250px;
+  }
+
+  .addContentContainer {
+    margin: 4rem 0;
+  }
+
+  .pdfContainer {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .pdfContainer img {
+    height: 50px;
+  }
+  .submittedContents {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,180 @@
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  max-width: 600px;
+  text-align: center;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalOptions {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 20px;
+}
+
+.modalOptions button {
+  padding: 10px;
+  border: none;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+}
+.modalOptions button:hover {
+  background-color: rgba(30, 143, 255, 0.139);
+  border: 1px solid dodgerblue;
+}
+.modalOptions button img {
+  border: 1px solid grey;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.uploadContent {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.submitBtn,
+.cancelBtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: #ff4d4d;
+}
+
+.submitBtn:hover {
+  background-color: #0077ed;
+}
+
+.cancelBtn:hover {
+  background-color: #e60000;
+}
+.textAreaContent {
+  width: 80%;
+  height: 150px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+.fileInfoContainer {
+  margin-top: 20px;
+}
+
+.fileInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.fileInfo h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.discardBtn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.discardBtn:hover {
+  background-color: #e60000;
+}
+
+.pdfContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pdfThumbnail {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .Modal {
+    max-width: 200px;
+  }
+  .Modal h2 {
+    font-size: 1rem;
+  }
+  .modalOptions {
+    gap: 1rem;
+    margin: 5px;
+  }
+
+  .modalOptions button {
+    padding: 5px;
+    width: 80px;
+  }
+
+  .modalOptions button img {
+    height: 20px;
+    padding: 5px;
+  }
+  .modalOptions p {
+    font-size: 10px;
+  }
+
+  .textAreaContent {
+    width: 90%;
+    font-size: 10px;
+    height: 100px;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  .submitBtn,
+  .cancelBtn {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+}

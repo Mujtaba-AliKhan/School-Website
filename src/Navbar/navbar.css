@@ -1,0 +1,170 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #363131;
+  color: grey;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+.navbar-container.closed .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-container.closed {
+  width: 60px;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  background-color: #363131;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 10px;
+  color: grey;
+  font-size: 12px;
+}
+
+.navbar-header img {
+  height: 50px;
+  border-radius: 50%;
+}
+.navbar-container.open .navbar-header img {
+  margin-right: 10px;
+}
+.navbar-container.closed .navbar-header .school-name {
+  display: none;
+}
+
+.navbar-content {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 70px);
+}
+
+.navbar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-content ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  cursor: pointer;
+  color: grey;
+}
+
+.navbar-content ul li .icon,
+.navbar-footer .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.navbar-content ul li .text {
+  display: inline-block;
+}
+
+.navbar-container.closed .navbar-content ul li .text {
+  display: none;
+}
+
+.navbar-content ul li.active,
+.navbar-content ul li:hover,
+.navbar-footer:hover {
+  color: dodgerblue;
+}
+
+.navbar-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  border-top: 1px solid white;
+  width: 100%;
+  padding: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: grey;
+}
+
+.navbar-footer .text {
+  display: inline-block;
+}
+
+.navbar-container.closed .navbar-footer .text {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-container.closed {
+    top: auto;
+    height: auto;
+    overflow: visible;
+    min-width: 100%;
+  }
+
+  .navbar-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar-container.closed .navbar-header img {
+    height: 30px;
+  }
+  .navbar-container.closed .navbar-header .school-name {
+    display: block;
+    font-size: 16px;
+  }
+
+  .navbar-footer {
+    display: none;
+  }
+
+  .navbar-content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #363131;
+  }
+  .navbar-content ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar-content ul li {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .navbar-content ul li .icon {
+    font-size: 20px;
+    margin: auto;
+  }
+  #collapseListItem {
+    display: none;
+  }
+  .navbar-container.closed .navbar-content ul li .text {
+    display: block;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 450px) {
+  .navbar-content ul li .icon {
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .navbar-container.closed .navbar-content ul li .text {
+    font-size: 12px;
+  }
+}
